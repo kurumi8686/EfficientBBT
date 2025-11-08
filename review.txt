@@ -1,0 +1,128 @@
+START dataset: CoLA
+CoLA 7b-pretrain accuracy: 0.6913 (721/1043)
+CoLA 13b-pretrain accuracy: 0.7220 (753/1043)
+CoLA 7b-Lora-Tune accuracy: 0.6961 (726/1043)
+CoLA 13b-Lora-Tune accuracy: 0.7009 (731/1043)
+CoLA proxy-tuning accuracy: 0.8035 (838/1043)
+Data Usage(filter): 17 / 8551(0.20%)
+CoLA CPT accuracy: 0.8667 (904/1043)
+CoLA GP_random accuracy: 0.8686 (906/1043)
+CoLA GP_filter accuracy: 0.8754 (913/1043)
+CoLA small direct tune acc: 0.8159 (851/1043)
+CoLA large direct tune acc: 0.8811 (919/1043)
+
+START dataset: COPA
+COPA 7b-pretrain accuracy: 0.9500 (475/500)
+COPA 13b-pretrain accuracy: 0.9360 (468/500)
+COPA 7b-Lora-Tune accuracy: 0.8600 (430/500)
+COPA 13b-Lora-Tune accuracy: 0.8940 (447/500)
+COPA proxy-tuning accuracy: 0.7980 (399/500)
+Data Usage(filter): 19 / 1000 (1.90%)
+COPA CPT accuracy: 0.9840 (492/500)
+COPA GP_random accuracy: 0.9840 (492/500)
+COPA GP_filter accuracy: 0.9880 (494/500)
+COPA small direct tune acc: 0.9760 (488/500)
+COPA large direct tune acc: 0.9840 (492/500)
+END dataset: COPA
+
+START dataset: RTE
+RTE 7b-pretrain accuracy: 0.5271 (146/277)
+RTE 13b-pretrain accuracy: 0.6498 (180/277)
+RTE 7b-Lora-Tune accuracy: 0.7942 (220/277)
+RTE 13b-Lora-Tune accuracy: 0.8628 (239/277)
+RTE proxy-tuning accuracy: 0.8845 (245/277)
+Data Usage(filter): 53 / 2490(2.13%)
+RTE CPT accuracy: 0.9097 (252/277)
+RTE GP_random accuracy: 0.9025 (250/277)
+RTE GP_filter accuracy: 0.8989 (249/277)
+RTE small direct tune acc: 0.9061 (251/277)
+RTE large direct tune acc: 0.9422 (261/277)
+END dataset: RTE
+
+START dataset: OBQA
+OBQA 7b-pretrain accuracy: 0.8400 (420/500)
+OBQA 13b-pretrain accuracy: 0.8900 (445/500)
+OBQA 7b-Lora-Tune accuracy: 0.9060 (453/500)
+OBQA 13b-Lora-Tune accuracy: 0.9420 (471/500)
+OBQA proxy-tuning accuracy: 0.9160 (458/500)
+Data Usage(filter): 69 / 4957(1.39%)
+OBQA CPT accuracy: 0.9380 (469/500)
+OBQA GP_random accuracy: 0.9300 (465/500)
+OBQA GP_filter accuracy: 0.9340 (467/500)
+OBQA small direct tune acc: 0.9320 (466/500)
+OBQA large direct tune acc: 0.9540 (477/500)
+END dataset: OBQA
+
+START dataset: SST2
+SST2 7b-pretrain accuracy: 0.9232 (805/872)
+SST2 13b-pretrain accuracy: 0.9151 (798/872)
+SST2 7b-Lora-Tune accuracy: 0.9128 (796/872)
+SST2 13b-Lora-Tune accuracy: 0.9472 (826/872)
+SST2 proxy-tuning accuracy: 0.9060 (790/872)
+Data Usage(filter): 857 / 67349 (1.27%)
+SST2 CPT accuracy: 0.9610 (838/872)
+SST2 GP_random accuracy: 0.9576 (835/872)
+SST2 GP_filter accuracy: 0.9667 (843/872)
+SST2 small direct tune acc: 0.9633 (840/872)
+SST2 large direct tune acc: 0.9736 (849/872)
+END dataset: SST2
+
+START dataset: AGnews
+AGnews 7b-pretrain accuracy: 0.8739 (6642/7600)
+AGnews 13b-pretrain accuracy: 0.8888 (6755/7600)
+AGnews 7b-Lora-Tune accuracy: 0.9130 (6939/7600)
+AGnews 13b-Lora-Tune accuracy: 0.9193 (6987/7600)
+AGnews proxy-tuning accuracy: 0.8924 (6782/7600)
+Data Usage(filter): 1503 / 120000 (1.25%)
+AGnews CPT accuracy: 0.9351 (7107/7600)
+AGnews GP_random accuracy: 0.9238 (7021/7600)
+AGnews GP_filter accuracy: 0.9308 (7074/7600)
+AGnews small direct tune acc: 0.9280 (7053/7600)
+AGnews large direct tune acc: 0.9445 (7178/7600)
+END dataset: AGnews
+
+START dataset: QNLI
+QNLI 7b-pretrain accuracy: 0.4970 (2715/5463)
+QNLI 13b-pretrain accuracy: 0.5415 (2958/5463)
+QNLI 7b-Lora-Tune accuracy: 0.8825 (4821/5463)
+QNLI 13b-Lora-Tune accuracy: 0.9105 (4974/5463)
+QNLI proxy-tuning accuracy: 0.8993 (4913/5463)
+Data Usage(filter): 1918 / 104743 (1.83%)
+QNLI CPT accuracy: 0.9542 (5213/5463)
+QNLI GP_random accuracy: 0.9464 (5170/5463)
+QNLI GP_filter accuracy: 0.9522 (5202/5463)
+QNLI small direct tune acc: 0.9526 (5204/5463)
+QNLI large direct tune acc: 0.9641 (5267/5463)
+END dataset: QNLI
+
+START dataset: QQP
+QQP 7b-pretrain accuracy: 0.5365 (21689/40430)
+QQP 13b-pretrain accuracy: 0.6221 (25152/40430)
+QQP 7b-Lora-Tune accuracy: 0.9057 (36619/40430)
+QQP 13b-Lora-Tune accuracy: 0.9089 (36746/40430)
+QQP proxy-tuning accuracy: 0.8911 (36028/40430)
+Data Usage(filter): 3786 / 363846 (1.04%)
+QQP CPT accuracy: 0.9256 (37421/40430)
+QQP GP_random accuracy: 0.9091 (36755/40430)
+QQP GP_filter accuracy: 0.9152 (37001/40430)
+QQP small direct tune acc: 0.9152 (37002/40430)
+QQP large direct tune acc: 0.9378 (37916/40430)
+END dataset: QQP
+COPA 13b-pretrain accuracy: 0.6820 (341/500)
+OBQA 13b-pretrain accuracy: 0.5560 (278/500)
+Data Usage(random): 100 / 4957
+Data Usage(random): 100 / 4957
+Data Usage(random): 100 / 4957
+Data Usage(random): 100 / 4957
+Data Usage(random): 100 / 4957
+Data Usage(random): 100 / 4957
+Data Usage(random): 250 / 4957
+Data Usage(random): 500 / 4957
+Data Usage(random): 1000 / 4957
+Data Usage(random): 20 / 1000
+Data Usage(random): 50 / 1000
+Data Usage(random): 100 / 1000
+Data Usage(random): 150 / 1000
+Data Usage(random): 200 / 1000
+Data Usage(random): 300 / 1000
+Data Usage(random): 300 / 1000

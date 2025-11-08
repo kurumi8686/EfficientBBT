@@ -1,0 +1,98 @@
+
+--- fake ---
+COPA accuracy: 0.8720 (436/500)
+CoLA accuracy: 0.8418 (878/1043)
+MRPC accuracy: 0.8456 (345/408)
+AGne accuracy: 0.9534 (7246/7600)
+SST2 accuracy: 0.9587 (836/872)
+ARCC accuracy: 0.5886 (176/299)
+CsQA accuracy: 0.7895 (964/1221)
+OBQA accuracy: 0.7800 (390/500)
+QNLI accuracy: 0.9489 (5184/5463)
+RTE  accuracy: 0.8195 (227/277)
+avg. accuracy: 0.8398
+
+--- deepfake ---
+由 13b-pretrain logits 的第一个数据来归一化随机生成的 output logits
+COPA accuracy: 0.8880 (444/500)
+CoLA accuracy: 0.8504 (887/1043)
+MRPC accuracy: 0.8676 (354/408)
+AGne accuracy: 0.9536 (7247/7600)
+SST2 accuracy: 0.9713 (847/872)
+ARCC accuracy: 0.5819 (174/299)
+CsQA accuracy: 0.7887 (963/1221)
+OBQA accuracy: 0.7900 (395/500)
+QNLI accuracy: 0.9515 (5198/5463)
+RTE  accuracy: 0.8628 (239/277)
+avg. accuracy: 0.8506
+
+--- deeperfake ---
+13b-pretrain logits 整体输出归一化（对应每一个维度的std、mean来做标准化）
+COPA accuracy: 0.9060 (453/500)
+CoLA accuracy: 0.8562 (893/1043)
+MRPC accuracy: 0.8627 (352/408)
+AGne accuracy: 0.9533 (7245/7600)
+SST2 accuracy: 0.9725 (848/872)
+ARCC accuracy: 0.5886 (176/299)
+CsQA accuracy: 0.7879 (962/1221)
+OBQA accuracy: 0.7920 (396/500)
+QNLI accuracy: 0.9511 (5196/5463)
+RTE  accuracy: 0.8628 (239/277)
+avg. accuracy: 0.8533
+
+--- deepestfake ---
+在deeperfake的基础上，初始化时引入了各个维度的协方差变量进行初始化，建模维度之间的关系
+COPA accuracy: 0.9000 (450/500)
+CoLA accuracy: 0.8571 (894/1043)
+MRPC accuracy: 0.8480 (346/408)
+AGne accuracy: 0.9528 (7241/7600)
+SST2 accuracy: 0.9690 (845/872)
+ARCC accuracy: 0.5886 (176/299)
+CsQA accuracy: 0.7838 (957/1221)
+OBQA accuracy: 0.7900 (395/500)
+QNLI accuracy: 0.9519 (5200/5463)
+RTE  accuracy: 0.8736 (242/277)
+avg. accuracy: 0.8515
+
+
+--- strong large fake ---
+把大模型换成lora后的一个checkpoint
+
+COPA 13b-lora accuracy: 0.8960 (448/500)
+COPA CPT accuracy (final logits): 0.9160 (458/500)
+COPA GP_filter accuracy (final logits): 0.9060 (453/500)
+
+CoLA 13b-lora accuracy: 0.8370 (873/1043)
+CoLA CPT accuracy (final logits): 0.8629 (900/1043)
+CoLA GP_filter accuracy (final logits): 0.8686 (906/1043)
+
+AGnews 13b-lora accuracy: 0.9380 (7129/7600)
+AGnews CPT accuracy (final logits): 0.9561 (7266/7600)
+AGnews GP_filter accuracy (final logits): 0.9524 (7238/7600)
+
+SST2 13b-lora accuracy: 0.9518 (830/872)
+SST2 CPT accuracy (final logits): 0.9702 (846/872)
+SST2 GP_filter accuracy (final logits): 0.9736 (849/872)
+
+ARCC 13b-lora accuracy: 0.6589 (197/299)
+ARCC CPT accuracy (final logits): 0.6856 (205/299)
+ARCC GP_filter accuracy (final logits): 0.5753 (172/299)
+
+CsQA 13b-lora accuracy: 0.7912 (966/1221)
+CsQA CPT accuracy (final logits): 0.7969 (973/1221)
+CsQA GP_filter accuracy (final logits): 0.7805 (953/1221)
+
+OBQA 13b-lora accuracy: 0.8040 (402/500)
+OBQA CPT accuracy (final logits): 0.8160 (408/500)
+OBQA GP_filter accuracy (final logits): 0.7880 (394/500)
+
+QNLI 13b-lora accuracy: 0.8984 (4908/5463)
+QNLI CPT accuracy (final logits): 0.9541 (5212/5463)
+QNLI GP_filter accuracy (final logits): 0.9528 (5205/5463)
+
+RTE 13b-lora accuracy: 0.8556 (237/277)
+RTE CPT accuracy (final logits): 0.8628 (239/277)
+RTE GP_filter accuracy (final logits): 0.8484 (235/277)
+
+real avg. 0.8690
+fake avg. 0.8495
