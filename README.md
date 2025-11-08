@@ -22,7 +22,7 @@ This repository contains the official implementation for the paper
 Our experiments demonstrate that **proxy-based black-box tuning** methods, built upon supervised fine-tuned (SFT) proxy models, significantly enhance the performance of large black-box models on most tasks.  
 However, for *complex mathematical reasoning* tasks, the improvement remains limited — mainly due to the constrained reasoning capabilities of the smaller proxy model.  
 
-We plan to explore **RL-based proxy fine-tuning** in future work to overcome this limitation.
+We plan to explore **RL-based proxy-tuning** in future work to overcome this limitation.
 
 ---
 
@@ -33,4 +33,4 @@ If you have any questions or suggestions regarding the code, feel free to reach 
 
 ---
 
-> © 2025 Fudan University. All rights reserved.
+> © 2025 Fudan University IMC Lab. All rights reserved.
