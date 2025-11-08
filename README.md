@@ -3,7 +3,7 @@
 This repository contains the official implementation for the paper  
 **"Advanced Black-Box Tuning of Large Language Models with Limited API Calls" (AAAI 2026, Oral)**.
 
-![Overview Figure](./assets/overview.png)
+![Overview Figure](./method-flowchart.png)
 
 ---
 
