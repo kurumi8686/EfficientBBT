@@ -11,7 +11,7 @@ for dataset in datasets:
 
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5"
     subprocess.run(["python", "pretrain.py", dataset])
-    '''
+    
     # lora-tune black box model
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5"
     subprocess.run(["python", "lora-tune.py", dataset])
@@ -38,7 +38,8 @@ for dataset in datasets:
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5"
     subprocess.run(["python", "full-finetune.py", dataset, "CPT"])
     subprocess.run(["python", "gp-cpt-acc2.py", dataset, "CPT"])
-    '''
+    
     print(f"Finished evaluation for {dataset}\n")
     with open("review.txt", "a") as f:
+
         f.write(f"END dataset: {dataset}\n\n")
